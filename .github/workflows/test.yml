@@ -11,5 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test
-        if: ${{ github.ref_name }} == main
+        if: github.ref_name == main
         run: echo ${{ vars.AWS_VAL }}
