@@ -11,5 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test
-        if: contains(['main','develop'], github.ref_name)
+        if: contains(fromJSON('["main", "develop"]'), github.ref_name)
         run: echo ${{ vars.AWS_VAL }}
