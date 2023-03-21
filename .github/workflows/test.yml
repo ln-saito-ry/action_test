@@ -6,7 +6,8 @@ on:
 jobs:
   test:
     name: test
-    environment: production
+    # environment: develop
+    environment: ${{ github.ref_name }}
     runs-on: ubuntu-latest
     steps:
       - name: test
