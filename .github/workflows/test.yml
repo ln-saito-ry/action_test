@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: test
         # if: github.ref_name != main
-        run: echo ${{ vars.AWS_KEY }}
+        run: echo ${{ vars.AWS_VAL }}
