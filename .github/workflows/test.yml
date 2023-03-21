@@ -8,5 +8,6 @@ jobs:
     name: test
     runs-on: ubuntu-latest
     steps:
-      - run: echo "ok"
+      - name: test
         if: github.ref_name != 'main'
+        run: echo "ok"
