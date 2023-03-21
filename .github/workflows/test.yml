@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "ok"
-      if: github.ref_name == 'main'
+        if: github.ref_name == 'main'
