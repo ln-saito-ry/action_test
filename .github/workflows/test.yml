@@ -6,8 +6,9 @@ on:
 jobs:
   test:
     name: test
+    environment: production
     runs-on: ubuntu-latest
     steps:
       - name: test
-        if: github.ref_name != main
-        run: echo "ok"
+        # if: github.ref_name != main
+        run: echo ${{ secrets.AWS_KEY }}
