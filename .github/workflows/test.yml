@@ -12,17 +12,16 @@ jobs:
     steps:
       - name: test
         run: echo ${{ vars.AWS_VAL }}
+# ---
+# name: test2
 
----
-name: test2
+# on:
+#   push:
 
-on:
-  push:
-
-jobs:
-  test:
-    name: test
-    runs-on: ubuntu-latest
-    steps:
-      - name: test
-        run: echo "ok"
+# jobs:
+#   test:
+#     name: test
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: test
+#         run: echo "ok"
