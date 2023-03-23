@@ -1,21 +1,17 @@
 name: test
 
 on:
-  push:
-    branches:
-      - '!main'
-      - '!develop'
-      - '!develop2'
+  pull_request:
 
 jobs:
   test:
     name: test
-    environment: develop
+    # environment: develop
     # environment: ${{ github.ref_name }}
     runs-on: ubuntu-latest
     steps:
-      - name: test
-        run: echo ${{ vars.AWS_VAL }}
+      - run: pwd
+      - run: ls
 # ---
 # name: test2
 
