@@ -22,8 +22,7 @@ jobs:
       - run: git rev-parse --abbrev-ref HEAD
       - run: git checkout ${GITHUB_HEAD_REF#refs/heads/}
       - run: git rev-parse --abbrev-ref HEAD
-      # - run: git checkout ${{github.sha}}
-      - run: git checkout HEAD
+      - run: git checkout ${{github.sha}}
       - run: git rev-parse --abbrev-ref HEAD
 # ---
 # name: test2
