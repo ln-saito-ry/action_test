@@ -26,8 +26,8 @@ jobs:
       - run: git branch --contains HEAD
       # - run: git checkout ${{github.sha}}
       # - run: git checkout pull/3/merge
-      - run: git checkout ${GITHUB_REF#refs/}
-      # - run: git checkout pull/3/merge
+      # - run: git checkout ${GITHUB_REF#refs/}
+      - run: git checkout pull/remotes/3/merge
       - run: git rev-parse --abbrev-ref HEAD
       - run: git branch --contains HEAD
 # ---
