@@ -28,6 +28,7 @@ jobs:
       - run: echo ${GITHUB_HEAD_REF}
       - run: echo ${GITHUB_REF#refs/heads/}
       - run: echo ${GITHUB_REF}
+      - run: git checkout ${{github.ref_name}}
 # ---
 # name: test2
 
