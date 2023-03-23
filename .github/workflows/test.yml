@@ -25,7 +25,7 @@ jobs:
       - run: git rev-parse --abbrev-ref HEAD
       - run: git branch --contains HEAD
       # - run: git checkout ${{github.sha}}
-      - run: git checkout 3/merge
+      - run: git checkout pull/3/merge
       - run: git rev-parse --abbrev-ref HEAD
       - run: git branch --contains HEAD
 # ---
