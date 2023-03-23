@@ -20,11 +20,14 @@ jobs:
       - run: echo ${GITHUB_REF#refs/heads/}
       - run: echo ${GITHUB_REF}
       - run: git rev-parse --abbrev-ref HEAD
+      - run: git branch --contains HEAD
       - run: git checkout ${GITHUB_HEAD_REF#refs/heads/}
       - run: git rev-parse --abbrev-ref HEAD
+      - run: git branch --contains HEAD
       # - run: git checkout ${{github.sha}}
       - run: git checkout 3/merge
       - run: git rev-parse --abbrev-ref HEAD
+      - run: git branch --contains HEAD
 # ---
 # name: test2
 
