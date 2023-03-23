@@ -19,11 +19,11 @@ jobs:
       - run: echo ${GITHUB_HEAD_REF}
       - run: echo ${GITHUB_REF#refs/heads/}
       - run: echo ${GITHUB_REF}
-      - run: git br --show-current
+      - run: git branch --show-current
       - run: git checkout ${GITHUB_HEAD_REF#refs/heads/}
-      - run: git br --show-current
+      - run: git branch --show-current
       - run: git checkout ${GITHUB_REF#refs/heads/}
-      - run: git br --show-current
+      - run: git branch --show-current
 # ---
 # name: test2
 
